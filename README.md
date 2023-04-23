@@ -85,6 +85,12 @@ Therefore, here I preprocess the data manually and store them locally first (whe
 python preprocess.py --config configs/example.yaml 
 ```
 
+For example
+
+```bash
+python preprocess.py --config .\configs\ag_news\textcnn.yaml
+```
+
 Then I load data dynamically using PyTorch's Dataloader when training (see [`datasets/dataloader.py`](datasets/dataloader.py)).
 
 The preprocessing including encoding and padding sentences and building word2ix map. This may takes a little time, but in this way, the training can occupy less memory (which means we can have a large batch size) and take less time. For example, I need 4.6 minutes (on RTX 2080 Ti) to train a fastText model on Yahoo Answers dataset for an epoch using torchtext, but only 41 seconds using Dataloader.
