@@ -49,7 +49,7 @@ def load_embeddings(
     # no cache, load embeddings from .txt file
     if not os.path.isfile(cache_path):
         # find embedding dimension
-        with open(emb_file, 'r') as f:
+        with open(emb_file, 'r', encoding='utf-8') as f:
             embed_dim = len(f.readline().split(' ')) - 1
             num_lines = len(f.readlines())
 
@@ -60,7 +60,7 @@ def load_embeddings(
         init_embeddings(embeddings)
 
         # read embedding file
-        for line in tqdm(open(emb_file, 'r'), total = num_lines, desc = 'Loading embeddings'):
+        for line in tqdm(open(emb_file, 'r', encoding="utf-8"), total = num_lines, desc = 'Loading embeddings'):
             line = line.split(' ')
 
             emb_word = line[0]
