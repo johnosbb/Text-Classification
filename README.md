@@ -50,6 +50,18 @@ To install torch with cuda support run the following command:
  pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
 
+One can test Cuda support with:
+
+```powershell
+nvcc --version
+```
+This will provide details of the version of Cuda you are running.
+
+```python
+import torch
+torch.cuda.is_available()
+```
+
 And additional requirements:
 
 ```bash
