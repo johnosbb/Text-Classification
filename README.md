@@ -135,7 +135,13 @@ Test a checkpoint and compute accuracy on test set:
 python test.py --config configs/example.yaml
 ```
 
-&nbsp;
+For example:
+
+```bash
+python test.py --config .\configs\ag_news\textcnn.yaml
+```
+
+
 
 ## Classify
 
