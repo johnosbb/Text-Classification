@@ -86,10 +86,13 @@ python preprocess.py --config configs/example.yaml
 ```
 
 For example
+We can download the ag_news data set from [here](https://drive.google.com/file/d/0Bz8a_Dbh9QhbUDNpeUdjb0wxRms/view?resourcekey=0-Q5sv-6rQnLTJArwcASJJow) and the word vector set from [here - glove.6B.zip](https://nlp.stanford.edu/projects/glove/) and then run the command:
 
 ```bash
 python preprocess.py --config .\configs\ag_news\textcnn.yaml
 ```
+
+
 
 Then I load data dynamically using PyTorch's Dataloader when training (see [`datasets/dataloader.py`](datasets/dataloader.py)).
 
