@@ -2,8 +2,24 @@
 
 PyTorch re-implementation of some text classificaiton models.
 
+## Introduction
+There are a number of discrete stages in the process of Text Classification:
 
-&nbsp;
+- Data preparation: This involves collecting and preparing the data for training. This may involve tasks such as data cleaning, preprocessing, and splitting the data into training and testing sets.
+
+- Feature extraction: The text data needs to be transformed into a numerical format that can be used as input for the model. This may involve techniques such as bag-of-words, tf-idf, or word embeddings.
+
+- Model selection: Choose an appropriate model architecture that can learn from the extracted features and make predictions. Common models used in text classification include logistic regression, support vector machines, and deep learning models such as convolutional neural networks (CNNs) and recurrent neural networks (RNNs).
+
+- Training the model: The model is trained on the labeled training data by optimizing a loss function to minimize the error between the predicted outputs and the true labels. This involves iterative updates to the model's parameters using a training algorithm such as gradient descent.
+
+- Model evaluation: The trained model is evaluated on the test set to measure its performance. Metrics such as accuracy, precision, recall, and F1 score are commonly used to evaluate the performance of text classification models.
+
+- Model tuning: Based on the performance of the model on the test set, the model's hyperparameters and architecture may be tuned to improve its performance.
+
+- Model deployment: Once the model has been trained and evaluated, it can be used to make predictions on new, unseen text data.
+
+
 
 ## Supported Models
 
@@ -29,8 +45,6 @@ Train the following models by editing `model_name` item in config files ([here](
 
     **Attention Is All You Need.** *Ashish Vaswani, et al.* NIPS 2017. [[Paper]](https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf) [[Code]](https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py)
 
-
-&nbsp;
 
 ## Requirements
 
