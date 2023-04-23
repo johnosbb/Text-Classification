@@ -150,7 +150,9 @@ tensorboard --logdir=<your_log_dir>
 
 ## Test
 
-Test a checkpoint and compute accuracy on test set:
+A checkpoint is a saved version of a trained model during the training process. It allows you to save the weights and other parameters of the model at a particular iteration or epoch, so that you can resume training from that point if necessary, or use the saved model for prediction or inference tasks.
+
+We can test a checkpoint and compute accuracy on test set :
 
 ```bash
 python test.py --config configs/example.yaml
