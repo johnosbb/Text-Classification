@@ -40,13 +40,22 @@ First, make sure your environment is installed with:
 
 Then install requirements:
 
+
+
+To install Cuda: Use the link [here](https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_local)
+
+To install torch with cuda support run the following command:
+
+```bash
+ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
+
+And additional requirements:
+
 ```bash
 pip install -r requirements.txt
 ```
 
-To install Cuda: Use the link [here](https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_local)
-
-&nbsp;
 
 ## Dataset
 
