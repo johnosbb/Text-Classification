@@ -25,6 +25,8 @@ There are a number of discrete stages in the process of Text Classification:
 
 Train the following models by editing `model_name` item in config files ([here](https://github.com/Renovamen/Text-Classification/tree/master/configs) are some example config files). Click the link of each for details.
 
+### Hierarchical Attention Networks
+
 - [**Hierarchical Attention Networks (HAN)**](https://github.com/Renovamen/Text-Classification/tree/master/models/HAN) (`han`)
 
 Hierarchical Attention Networks (HAN) is a deep learning architecture that combines the strength of hierarchical structure and attention mechanism for text classification tasks. It has two levels of attention mechanisms, one that focuses on the words in a sentence (word-level attention) and another that focuses on the sentences in a document (sentence-level attention). The model takes a document as input, which is a sequence of sentences, and first passes it through a word-level attention mechanism that assigns a weight to each word based on its importance in the sentence. The weights are learned through training and are used to create a weighted sentence vector for each sentence in the document.
@@ -33,24 +35,16 @@ Next, the model uses a sentence-level attention mechanism to assign a weight to 
 
 The use of hierarchical attention mechanisms allows the model to capture important information at different levels of granularity in the text, which can be beneficial for tasks such as sentiment analysis or topic classification where the meaning of the text can depend on both individual words and the overall structure of the text. Additionally, the attention mechanisms enable the model to focus on the most important parts of the text for classification, improving its performance compared to models that do not use attention mechanisms.
 
+#### Feedforward Neural Network
 
-
-
-
-Sean O'Suilleabhain
-What is a feedforward neural network?
 A feedforward neural network is a type of artificial neural network where the connections between the nodes do not form a cycle. The data flows in only one direction, from the input layer through one or more hidden layers to the output layer. The nodes in each layer are connected to all the nodes in the previous layer, but not to the nodes in the same layer or subsequent layers.
 
 In a feedforward neural network, the input data is fed into the input layer, which passes the data on to the first hidden layer. Each node in the hidden layer applies a mathematical function to the data it receives and passes the result to the next layer. This process continues through all the hidden layers until the output layer is reached, which generates the final output. The output is typically a classification or regression result.
 
 The weights and biases of the network are adjusted during the training process to minimize the error between the predicted output and the actual output. This is typically done using backpropagation, which calculates the gradient of the loss function with respect to the weights and biases, and adjusts them in the direction that minimizes the loss.
 
+#### Gradient Loss Function
 
-
-
-
-Sean O'Suilleabhain
-Can you explain gradient of the loss function
 In machine learning, the goal of training a model is to minimize a loss function. The loss function measures how well the model is performing on the training data. The gradient of the loss function is a vector that points in the direction of steepest ascent of the loss function. It indicates how much the loss function changes with respect to each parameter in the model.
 
 The gradient of the loss function is computed using the chain rule of calculus. Each parameter in the model contributes to the loss function, so the gradient is a vector of partial derivatives with respect to each parameter.
