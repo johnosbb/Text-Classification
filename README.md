@@ -156,7 +156,7 @@ We can download the ag_news data set from [here](https://drive.google.com/file/d
 python preprocess.py --config .\configs\ag_news\textcnn.yaml
 ```
 
-
+This preprocesses the data using a convolutional neural networks for sentence classification (textcnn).
 
 Then I load data dynamically using PyTorch's Dataloader when training (see [`datasets/dataloader.py`](datasets/dataloader.py)).
 
