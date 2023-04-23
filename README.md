@@ -112,6 +112,13 @@ To train a model, just run:
 python train.py --config configs/example.yaml
 ```
 
+
+For example:
+
+```bash
+python train.py --config .\configs\ag_news\textcnn.yaml
+```
+
 If you have enabled the tensorboard (`tensorboard: True` in config files), you can visualize the losses and accuracies during training by:
 
 ```bash
