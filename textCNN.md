@@ -26,4 +26,11 @@ After the convolutional layer, a non-linear activation function such as ReLU (re
 This process of convolution, activation, and pooling is repeated multiple times in a CNN, with each subsequent layer learning more complex features of the input data. Finally, the output is flattened and passed through one or more fully connected layers to produce a prediction.
 
 CNNs can also be used for other types of data, such as time series or text data, by using one-dimensional or two-dimensional convolutions instead of the typical two-dimensional convolutions used for images.
+
+### The Process of Convolution
+
+Convolution is an operation on two functions that produces a third function, which expresses how one function modifies the other. In the context of convolutional neural networks (CNNs), convolutional layers perform a similar operation on the input data, which is usually an image (but it could also be text). The convolutional layer takes a small matrix called the filter, kernel, or feature detector, and slides it over the input image (or text), performing the convolution operation. This operation results in a feature map, which is a representation of the input image that highlights certain patterns and features, depending on the filters used. The term "convolutional" in CNNs refers to the use of convolutional layers in the network architecture.
+
+In the context of text classification using convolutional neural networks, we slide a filter over the input text at the word level. The filter convolves over each group of adjacent word vectors in the input text to produce a new feature. We then use these features as input to a fully connected layer to classify the text.
+
     
