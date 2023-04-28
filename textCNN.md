@@ -13,7 +13,7 @@ TextCNN is a simple and effective model for text classification tasks, and it ha
 - [**TextCNN**](https://github.com/Renovamen/Text-Classification/tree/master/models/TextCNN) (`textcnn`)
     **Convolutional Neural Networks for Sentence Classification.** *Yoon Kim.* EMNLP 2014. [[Paper]](https://www.aclweb.org/anthology/D14-1181.pdf) [[Code]](https://github.com/yoonkim/CNN_sentence)
 - [A Beginner's Guide To Understanding Convolutional Neural Networks](https://adeshpande3.github.io/A-Beginner's-Guide-To-Understanding-Convolutional-Neural-Networks/)    
-
+- [Deep Visualization Tookbox](https://www.youtube.com/watch?v=AgkfIQ4IGaM)
 
 ##  Convolutional Neural Networks
 
@@ -36,3 +36,9 @@ In the context of text classification using convolutional neural networks, we sl
 ### Relationship to the Visual Cortex
 
 CNNs take a biological inspiration from the visual cortex. The visual cortex has small regions of cells that are sensitive to specific regions of the visual field. This idea was expanded upon by a fascinating experiment by Hubel and Wiesel in 1962 (Video) where they showed that some individual neuronal cells in the brain responded (or fired) only in the presence of edges of a certain orientation. For example, some neurons fired when exposed to vertical edges and some when shown horizontal or diagonal edges. Hubel and Wiesel found out that all of these neurons were organized in a columnar architecture and that together, they were able to produce visual perception. This idea of specialized components inside of a system having specific tasks (the neuronal cells in the visual cortex looking for specific characteristics) is one that machines use as well, and is the basis behind CNNs.
+
+### Pooling
+
+In the context of convolutional neural networks (CNNs) used for text classification, pooling refers to a down-sampling operation that is applied after one or more convolutional layers. The pooling layer reduces the size of the feature maps by extracting the most important information from each feature map, while discarding the less important information. The pooling operation can be applied in different ways, such as max pooling, average pooling, or L2 pooling, among others.
+
+Max pooling is the most common type of pooling used in CNNs for text classification. In max pooling, a window of fixed size is slid over the feature map and the maximum value in each window is taken as the output of the pooling layer. This operation effectively reduces the dimensionality of the feature map, while retaining the most important features.
