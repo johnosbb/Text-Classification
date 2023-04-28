@@ -33,4 +33,6 @@ Convolution is an operation on two functions that produces a third function, whi
 
 In the context of text classification using convolutional neural networks, we slide a filter over the input text at the word level. The filter convolves over each group of adjacent word vectors in the input text to produce a new feature. We then use these features as input to a fully connected layer to classify the text.
 
-    
+### Relationship to the Visual Cortex
+
+CNNs take a biological inspiration from the visual cortex. The visual cortex has small regions of cells that are sensitive to specific regions of the visual field. This idea was expanded upon by a fascinating experiment by Hubel and Wiesel in 1962 (Video) where they showed that some individual neuronal cells in the brain responded (or fired) only in the presence of edges of a certain orientation. For example, some neurons fired when exposed to vertical edges and some when shown horizontal or diagonal edges. Hubel and Wiesel found out that all of these neurons were organized in a columnar architecture and that together, they were able to produce visual perception. This idea of specialized components inside of a system having specific tasks (the neuronal cells in the visual cortex looking for specific characteristics) is one that machines use as well, and is the basis behind CNNs.
