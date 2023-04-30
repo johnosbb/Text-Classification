@@ -42,3 +42,8 @@ CNNs take a biological inspiration from the visual cortex. The visual cortex has
 In the context of convolutional neural networks (CNNs) used for text classification, pooling refers to a down-sampling operation that is applied after one or more convolutional layers. The pooling layer reduces the size of the feature maps by extracting the most important information from each feature map, while discarding the less important information. The pooling operation can be applied in different ways, such as max pooling, average pooling, or L2 pooling, among others.
 
 Max pooling is the most common type of pooling used in CNNs for text classification. In max pooling, a window of fixed size is slid over the feature map and the maximum value in each window is taken as the output of the pooling layer. This operation effectively reduces the dimensionality of the feature map, while retaining the most important features.
+
+
+### Kernel
+
+A kernel refers to a matrix or a small window that moves over the input text sequence in the convolutional layer of a CNN. Each element of the kernel represents a learnable parameter that convolves with the input text to produce a feature map. The size of the kernel is a hyperparameter that is usually set based on the size of the relevant features in the text data. By varying the size and number of kernels, a CNN can learn different features at different levels of abstraction in the input text.
